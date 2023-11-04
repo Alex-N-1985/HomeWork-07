@@ -11,9 +11,11 @@ h1 {
     font-family: sans-serif;
     font-size: 30px;
 }
+
 .main {
     position: absolute;
     margin: 1%;
+    padding: 0;
     width: 1500px;
     height: 680px;
     border: 1px solid black;
@@ -22,37 +24,48 @@ h1 {
 
 .group {
     position: relative;
-    margin: 1%;
-    width: 450px;
+    margin: 10px;
+    padding: 5px;
+    width: 203px;
+    line-height: 0;
     display: inline-block;
-    height: 650px;
+    vertical-align: top;
+    height: 610px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
 .square {
     display: inline-block;
-    margin: 5px;
-    width: 200px;
-    height: 200px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
+.square + .square {
+    margin-left: -.36em;
+}
+
 .rectangle {
     font-display: inline-block;
-    margin: 5px;
-    width: 400px;
-    height: 200px;
+    position: relative;
+    margin: 0;
+    width: 200px;
+    height: 100px;
     border: 1px solid black;
     border-radius: 10px;
 }
 
 .bigsquare {
     font-display: inline-block;
-    margin: 5px;
-    width: 400px;
-    height: 400px;
+    position: relative;
+    margin: 0;
+    width: 200px;
+    height: 200px;
     border: 1px solid black;
     border-radius: 10px;
 }
